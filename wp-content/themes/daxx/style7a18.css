@@ -1,0 +1,280 @@
+/*
+Theme Name: Daxx
+Theme URI: http://daxx.lohatheme.com
+Author: Lohatheme
+Author URI: http://lohatheme.com
+Description: In 2024, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: daxx
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+    00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+header .logo img{
+    max-width: 100%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    height: auto;
+}
+body.logged-in:not(.elementor-editor-active) .main-header.fixed-header .header-upper {
+    top: 30px;
+}
+.before-author{
+    margin-right: 5px;
+}
+.comment-form-cookies-consent,
+.required-field-message{
+    display: none;
+}
+.comment-body .author-date img{
+    border-radius: 50%;
+}
+a.comment-reply-link:not(:hover) {
+    color: var(--heading-color);
+}
+a.comment-reply-link{
+    font-weight: 700;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+#cancel-comment-reply-link{
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color: #fff;
+    text-transform: none;
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+.comment-respond:has(#cancel-comment-reply-link) .comment-title{
+    position: relative;
+}
+@media(max-width: 1360px){
+    .comment-respond:has(#cancel-comment-reply-link) h2{
+        margin-bottom: 80px;
+    }
+    #cancel-comment-reply-link{
+        margin-top: 75px;
+    }
+}
+@media(max-width: 768px){
+    #cancel-comment-reply-link{
+        margin-top: 55px;
+    }
+}
+@media (max-width: 500px){
+    #cancel-comment-reply-link{
+        margin-top: 85px;
+    }
+}
+.stButton .stButton_gradient{
+    height: 21px !important;
+}
+.st_instagram_hcount .stButton_gradient{
+    padding: 0!important;
+}
+.st_instagram_hcount .stArrow{
+    line-height: 21px!important;
+}
+.stMainServices,
+.stButton_gradient{
+    width: 22px!important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.chicklets.instagram{
+    width: 22px!important;
+}
+.stButton .chicklets{
+    width: 20px;
+    overflow: hidden;
+    display: -webkit-inline-box;
+    height: 20px;
+    line-height: 21px;
+}
+.pagination a.prev,
+.pagination a.next{
+    padding: 4px 30px;
+}
+.blog-area:has(.search-custom.search-no-result){
+    height: 515px;
+}
+.search-custom.search-no-result{
+    background: var(--lighter-color);
+    padding: 40px;
+}
+.search-custom h4{
+    margin-bottom: 30px;
+}
+.search-custom form{
+    padding: 0;
+    position: relative;
+}
+.search-custom form input{
+    border-radius: 0px;
+
+}
+.search-custom form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    background-color: var(--main-color);
+    height: 60px;
+    width: 60px;
+}
+@media(min-width: 1024px){
+    .blog-area .blog-active:has(.search-custom.search-no-result){
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+.cities-select .nice-select .blog-active span{
+    display: block!important;
+}
+.projects-area .section-title.blog-active:has(.item1[style="position: absolute; left: 0px; top: 0px;"], .item2[style="position: absolute; left: 324.275px; top: 0px;"]):not(h2[style="display: none;"]) h2:nth-child(n+2){
+    display: none!important;
+}
+.projects-area .blog-active.section-title{
+    max-height: 52.8px;
+    min-height: 52.8px;
+}
+.nice-select .blog-active{
+    height: 31.2px!important;
+}
+.cities-select .nice-select .blog-filter.list li.current{
+    font-weight: 400;
+    color: var(--main-color);
+    background: transparent;
+    border-color: var(--main-color);
+}
+.elementor hr {
+    margin: 1rem 0!important;
+    color: inherit;
+    background-color: currentColor!important;
+    border: 0;
+    opacity: .25;
+}
+.select-radio-date .wpcf7-list-item {
+    margin: 0 9px 18px;
+    padding: 12px;
+    font-weight: 700;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: white;
+    text-align: center;
+    position: relative;
+    color: var(--heading-color);
+    border: 1px solid var(--border-color);
+}
+.wpcf7-spinner{
+    position: absolute;
+}
+.wpcf7 form.invalid .wpcf7-response-output, 
+.wpcf7 form.unaccepted .wpcf7-response-output, 
+.wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #d9dfe7;
+    margin-right: 0;
+    margin-left: 0;
+}
+.wpcf7-not-valid-tip {
+    color: #f15b26;
+    font-size: 16px;
+    margin-top: 10px;
+}
+footer .cta-form {
+    position: relative;
+}
+footer .cta-form > p{
+    display: contents;
+}
+footer .cta-form .wpcf7-form-control-wrap{
+    width: 100%;
+}
+@media(min-width: 480px){
+    footer .cta-form .wpcf7-submit{
+        width: auto;
+    }
+}
+footer .cta-form .wpcf7-submit{
+    position: absolute;
+    right: 0;
+    padding: 12px 20px;
+}
+footer .footer-cta-inner .wpcf7 form.invalid .wpcf7-response-output, 
+footer .footer-cta-inner .wpcf7 form.unaccepted .wpcf7-response-output, 
+footer .footer-cta-inner .wpcf7 form.payment-required .wpcf7-response-output {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    border-color: #fff;
+}
+footer .footer-cta-inner .wpcf7-not-valid-tip{
+    color: #fff;
+}
+@media(max-width: 600px){
+    .social-style-two{
+        margin-left: 0;
+    }
+}
+@media(max-width: 479px){
+    footer .footer-cta-inner .wpcf7 form.invalid .wpcf7-response-output, 
+    footer .footer-cta-inner .wpcf7 form.unaccepted .wpcf7-response-output, 
+    footer .footer-cta-inner .wpcf7 form.payment-required .wpcf7-response-output {
+        margin-top: 75px;
+    }
+}
+.elementor .team-member hr {
+    max-width: 80px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media(max-width: 400px){
+    .blog-meta {
+        display: block;
+        margin-top: 8px;
+    }
+    .blog-meta li:not(:first-child):before{
+        content: none;
+    }
+}
+@media(max-width: 300px){
+    .page-wrapper {
+        max-width: 280px;
+        min-width: 280px;
+    }
+    .table-style tr td {
+        padding: 10px;
+    }
+    .table-style {
+        font-size: 12px;
+    }
+}
