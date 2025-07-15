@@ -12709,8 +12709,8 @@ h6, .h6 {
 }
 
 .timeline-item .icon {
-  width: 60px;
-  height: 60px;
+  width: 130px;
+  height: 51px;
   -webkit-box-flex: wrap;
   -ms-flex: wrap;
   flex: wrap;
