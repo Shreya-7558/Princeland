@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .logo {
+      width: 150px;
+      animation: zoomIn 2s ease-in-out forwards;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.2);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loader Logo -->
+  <img src="wp-content/uploads/2024/02/logo-princeland_ (1).png" alt="Company Logo" class="logo" />
+
+  <script>
+    // After 3 seconds, redirect to your main website
+    setTimeout(() => {
+      window.location.href = "index.html"; // Change this if your main page has a different name
+    }, 3000);
+  </script>
+
+</body>
+</html>

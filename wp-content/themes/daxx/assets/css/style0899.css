@@ -5084,8 +5084,8 @@ h6, .h6 {
 
 @media only screen and (max-width: 479px) {
   .timeline-item .icon {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 24px;
   }
 }
 
@@ -5354,6 +5354,12 @@ h6, .h6 {
   padding-bottom: 5px;
   margin-bottom: 30px;
   padding-right: 25px;
+}
+.counter-plus{
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-right: 20px;
 }
 
 .counter-item .counter-count {
@@ -5768,7 +5774,7 @@ h6, .h6 {
 .developer-item .developer-content {
   position: absolute;
   left: 0;
-  bottom: -166px;
+  bottom: -129px;
   z-index: 2;
   width: 100%;
   padding: 40px;
@@ -12703,8 +12709,8 @@ h6, .h6 {
 }
 
 .timeline-item .icon {
-  width: 60px;
-  height: 60px;
+  width: 130px;
+  height: 51px;
   -webkit-box-flex: wrap;
   -ms-flex: wrap;
   flex: wrap;
