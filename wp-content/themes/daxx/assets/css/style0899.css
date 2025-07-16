@@ -13417,7 +13417,7 @@ h6, .h6 {
 .developer-item .developer-content {
   position: absolute;
   left: 0;
-  bottom: -166px;
+  bottom: -118px;
   z-index: 2;
   width: 100%;
   padding: 40px;
@@ -13955,10 +13955,13 @@ h6, .h6 {
 }
 
 .blockquote-content .blockquote-text {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 1.47;
-  color: var(--main-color);
+    width: 124%;
+    margin-left: 40px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.47;
+    color: var(--main-color);
+    text-align: justify;
 }
 
 @media only screen and (max-width: 767px) {
@@ -13981,9 +13984,12 @@ h6, .h6 {
 
 .blockquote-content .name {
   margin-bottom: 20px;
+  margin-left: 44px;
   text-transform: uppercase;
 }
-
+.designation{
+  margin-left: 45px;
+}
 .blog-meta {
   display: -webkit-box;
   display: -ms-flexbox;
