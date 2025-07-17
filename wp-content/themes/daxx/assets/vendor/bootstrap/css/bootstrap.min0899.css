@@ -1505,7 +1505,8 @@ progress {
 
     .col-lg-5 {
         flex: 0 0 auto;
-        width: 41.66666667%
+        width: 41.66666667%;
+        height: 650px;
     }
 
     .col-lg-6 {

@@ -8073,6 +8073,7 @@ input[type=checkbox], input[type=radio] {
 @media only screen and (max-width: 575px) {
   .section-text p {
     font-size: 20px;
+    width: 355px;
   }
 }
 
@@ -8779,10 +8780,19 @@ h1, .h1 {
   line-height: 1.16;
   font-size: 86px;
 }
-
+.princeland-heading{
+  line-height: 1.1;
+  font-size: 50px;
+}
 h2, .h2 {
   line-height: 1.1;
   font-size: 60px;
+}
+
+.front-para{
+  font-size: 24px;
+  line-height: 1.4;
+  width: 1022px;
 }
 
 h3, .h3 {
@@ -13913,6 +13923,8 @@ h6, .h6 {
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
+  margin-right: 51px;
+
 }
 
 .team-member h6 {
@@ -14261,7 +14273,33 @@ blockquote .quote-text {
     font-size: 22px;
   }
 }
+.footer-logo{
+  width: 173px;
+  margin-left: 16px;
+}
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .footer-logo {
+    width: 220px;
+    margin-left: 12px;
+  }
+}
 
+/* Mobile screens */
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 220px;
+    margin-left: 8px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .footer-logo {
+      width: 343px;
+      margin-left: 6px;
+  }
+}
 blockquote .blockquote-footer {
   color: #D9DFE7;
   display: block;
