@@ -12193,8 +12193,18 @@ h6, .h6 {
   float: right;
   cursor: pointer;
   padding: 5px 14px;
-  background: var(--main-color);
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  touch-action: manipulation;      /* Improves touch responsiveness */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on iOS */
+  -webkit-user-select: none;       /* Prevents accidental text selection */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
+
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
   background: white;
